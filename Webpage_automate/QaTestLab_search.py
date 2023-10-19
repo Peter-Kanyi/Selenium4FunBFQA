@@ -10,7 +10,7 @@ def search_an_item(search_term, site_url, screenshot):
         time.sleep(5)                   # Allow user time to see the site
         search_bar = driver.find_element("name","search")
         search_bar.send_keys(Keys.ENTER)
-        time.sleep(10)
+        time.sleep(5)
         driver.save_screenshot(screenshot_name) # save the results
     finally:
         driver.quit()
